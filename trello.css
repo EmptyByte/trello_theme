@@ -17,12 +17,12 @@
 /* Uncomment display:inline-flex for the column to take full-height */
 .list-wrapper { 
 	box-sizing: border-box;
-    /*display: inline-flex;*/
-    height: 100%;
-    margin: 2px 2px;
-    vertical-align: top;
-    white-space: nowrap;
-    min-width: 272px;
+	/*display: inline-flex;*/
+	height: 100%;
+	margin: 2px 2px;
+	vertical-align: top;
+	white-space: nowrap;
+	min-width: 272px;
 	width: auto !important;
 }
 
@@ -48,6 +48,7 @@
 	background-color: #f7f7f7; 
 }
 
+/* List settings */
 .list.js-list-content { 
 	border-radius: none; 
 }
@@ -81,7 +82,7 @@
 	border: none;
 }
 
-/* Hide some badges (description + attachment)*/
+/* Hide some badges (description + attachment) */
 .badge[title="This card has a description."], .badge[title="Attachments"]{ 
 	display: none; 
 	visibility: hidden; 
