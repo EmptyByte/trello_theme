@@ -13,11 +13,10 @@
 	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); position: relative; 
 }
 
-/* Flexible board */
-/* Uncomment display:inline-flex for the column to take full-height */
+/*  change: display: block to inline-flex for the column to fit height */
 .list-wrapper { 
 	box-sizing: border-box;
-	/*display: inline-flex;*/
+	display: block;
 	height: 100%;
 	margin: 2px 2px;
 	vertical-align: top;
@@ -26,6 +25,10 @@
 	width: auto !important;
 }
 
+.list-wrapper:first-child {
+    margin-left: 0px !important;
+
+}
 /* Column header settings */
 .list-header.js-list-header { 
 	background-image: linear-gradient(to right, rgb(71, 118, 230) 0%, rgb(142, 84, 233) 51%, rgb(71, 118, 230) 100%); 
@@ -101,4 +104,3 @@
 .color-card-cover.color-card-cover-sky>.list-card-details.js-card-details>.list-card-title.js-card-name  { color: #fff !important; }
 .full-cover-list-card:hover.color-card-cover-black { background-color: #2e2e2e; !important; }
 .full-cover-list-card:hover.color-card-cover-sky { background-color: #1E90FF; !important; }
-
