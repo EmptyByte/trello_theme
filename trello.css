@@ -1,9 +1,5 @@
 /*Set the background color you want on Trello*/
 #trello-root { 
-	/*background-image: none !important;*/
-	/*background-color: #2C3E50 !important;*/
-	/*background-image: linear-gradient( 315deg, hsl(210deg 29% 24%) 0%, hsl(215deg 26% 33%) 8%, hsl(222deg 23% 42%) 17%, hsl(232deg 21% 53%) 25%, hsl(245deg 27% 63%) 33%, hsl(260deg 39% 71%) 42%, hsl(276deg 59% 79%) 50%, hsl(229deg 40% 67%) 58%, hsl(207deg 36% 47%) 67%, hsl(194deg 48% 30%) 75%, hsl(184deg 43% 19%) 83%, hsl(166deg 29% 11%) 92%, hsl(130deg 100% 1%) 100% ) !important;*/
-	/*background-image: linear-gradient( 315deg, hsl(210deg 29% 24%) 0%, hsl(211deg 41% 30%) 8%, hsl(214deg 46% 37%) 17%, hsl(217deg 46% 45%) 25%, hsl(223deg 49% 54%) 33%, hsl(232deg 65% 65%) 42%, hsl(243deg 92% 75%) 50%, hsl(206deg 100% 42%) 58%, hsl(201deg 100% 32%) 67%, hsl(194deg 100% 21%) 75%, hsl(182deg 100% 12%) 83%, hsl(166deg 77% 8%) 92%, hsl(130deg 100% 1%) 100% )!important;*/
 	background-image:  linear-gradient( 315deg, hsl(210deg 29% 24%) 0%, hsl(211deg 28% 27%) 8%, hsl(211deg 26% 29%) 17%, hsl(212deg 25% 32%) 25%, hsl(212deg 25% 35%) 33%, hsl(213deg 24% 37%) 42%, hsl(213deg 23% 40%) 50%, hsl(203deg 29% 31%) 58%, hsl(194deg 32% 24%) 67%, hsl(186deg 31% 17%) 75%, hsl(174deg 26% 12%) 83%, hsl(158deg 22% 8%) 92%, hsl(130deg 100% 1%) 100% ) !important; 
 }
 
@@ -13,7 +9,7 @@
 	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); position: relative; 
 }
 
-/*  change: display: block to inline-flex for the column to fit height */
+/*  change: display: block to inline-flex for the column to fit height each other */
 .list-wrapper { 
 	box-sizing: border-box;
 	display: block;
@@ -25,6 +21,7 @@
 	width: auto !important;
 }
 
+/* Removes the margin-left on first column */
 .list-wrapper:first-child {
     margin-left: 0px !important;
 
