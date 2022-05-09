@@ -1,12 +1,12 @@
 /*Set the background color you want on Trello*/
 #trello-root { 
-	background-image:  linear-gradient( 315deg, hsl(210deg 29% 24%) 0%, hsl(211deg 28% 27%) 8%, hsl(211deg 26% 29%) 17%, hsl(212deg 25% 32%) 25%, hsl(212deg 25% 35%) 33%, hsl(213deg 24% 37%) 42%, hsl(213deg 23% 40%) 50%, hsl(203deg 29% 31%) 58%, hsl(194deg 32% 24%) 67%, hsl(186deg 31% 17%) 75%, hsl(174deg 26% 12%) 83%, hsl(158deg 22% 8%) 92%, hsl(130deg 100% 1%) 100% ) !important; 
+	background-image: linear-gradient( 315deg, hsl(210deg 29% 24%) 0%, hsl(211deg 28% 27%) 8%, hsl(211deg 26% 29%) 17%, hsl(212deg 25% 32%) 25%, hsl(212deg 25% 35%) 33%, hsl(213deg 24% 37%) 42%, hsl(213deg 23% 40%) 50%, hsl(203deg 29% 31%) 58%, hsl(194deg 32% 24%) 67%, hsl(186deg 31% 17%) 75%, hsl(174deg 26% 12%) 83%, hsl(158deg 22% 8%) 92%, hsl(130deg 100% 1%) 100% ) !important; 
 }
 
 /* Flexible board */
 #board { 
-	display: grid; 
-	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); position: relative; 
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); position: relative;
 }
 
 /*  change: display: block to inline-flex for the column to fit height each other */
@@ -24,8 +24,8 @@
 /* Removes the margin-left on first column */
 .list-wrapper:first-child {
     margin-left: 0px !important;
-
 }
+
 /* Column header settings */
 .list-header.js-list-header { 
 	background-image: linear-gradient(to right, rgb(71, 118, 230) 0%, rgb(142, 84, 233) 51%, rgb(71, 118, 230) 100%); 
@@ -89,13 +89,13 @@
 }
 
 /* Cover colors settings */
-.color-card-cover.color-card-cover-dark { background-color: #2e2e2e; !important; }
 .color-card-cover.color-card-cover-black { background-color: #2e2e2e; !important; }
-.color-card-cover.color-card-cover-sky { background-color: #1E90FF; !important; }
-.color-card-cover.color-card-cover-yellow { background-color: #FFDF00; !important; }
-.color-card-cover.color-card-cover-orange { background-color: #ffa000; !important; }
+.color-card-cover.color-card-cover-dark { background-color: #2e2e2e; !important; }
 .color-card-cover.color-card-cover-green { background-color: #32CD32 !important; }
 .color-card-cover.color-card-cover-lime { background-color: #ADFF2F !important; }
+.color-card-cover.color-card-cover-orange { background-color: #ffa000; !important; }
+.color-card-cover.color-card-cover-sky { background-color: #1E90FF; !important; }
+.color-card-cover.color-card-cover-yellow { background-color: #FFDF00; !important; }
 .color-card-cover.color-card-cover-red { background-color: #eb5a46 !important; }
 .color-card-cover.color-card-cover-red>.list-card-details.js-card-details>.list-card-title.js-card-name  { color: #fff !important; }
 .color-card-cover.color-card-cover-sky>.list-card-details.js-card-details>.list-card-title.js-card-name  { color: #fff !important; }
