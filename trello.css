@@ -10,10 +10,10 @@
 	position: relative;
 }
 
-/*  change: display: block to inline-flex for the column to fit height each other */
+/*  change: display: from inline-flex to block for the columns to fit stack */
 .list-wrapper { 
 	box-sizing: border-box;
-	display: block;
+	display: inline-flex;
 	height: 100%;
 	margin: 2px 2px;
 	vertical-align: top;
