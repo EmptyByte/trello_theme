@@ -14,12 +14,10 @@
 .list-wrapper { 
 	box-sizing: border-box;
 	display: inline-flex;
-	height: 100%;
 	margin: 2px 2px;
 	padding-top: 10px;
 	vertical-align: top;
 	white-space: nowrap;
-	/*min-width: 272px;*/
 	width: auto !important;
 }
 
