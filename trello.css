@@ -6,7 +6,8 @@
 /* Flexible board */
 #board { 
 	display: grid;
-	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); position: relative;
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); 
+	position: relative;
 }
 
 /*  change: display: block to inline-flex for the column to fit height each other */
