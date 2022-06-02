@@ -10,15 +10,22 @@
 	position: relative;
 }
 
-/*  change: display: from inline-flex to block for the columns to fit stack */
+/*  change: 'display' from inline-flex to block for the columns to fit stack */
 .list-wrapper { 
 	box-sizing: border-box;
-	display: inline-flex;
+	display: block;
 	margin: 2px 2px;
 	padding-top: 10px;
 	vertical-align: top;
 	white-space: nowrap;
 	width: auto !important;
+}
+
+.list-wrapper.mod-add {
+	margin-top: 12px !important;
+	font-weight: bold; 
+	font-size: calc(12px + 0.1vw) !important; 
+	background-color: unset !important
 }
 
 /* Removes the margin-left on first column */
