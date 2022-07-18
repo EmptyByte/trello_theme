@@ -1,62 +1,68 @@
 /*Set the background color you want on Trello*/
 #trello-root { 
     background-image: linear-gradient( 315deg, hsl(210deg 29% 24%) 0%, hsl(211deg 28% 27%) 8%, hsl(211deg 26% 29%) 17%, hsl(212deg 25% 32%) 25%, hsl(212deg 25% 35%) 33%, hsl(213deg 24% 37%) 42%, hsl(213deg 23% 40%) 50%, hsl(203deg 29% 31%) 58%, hsl(194deg 32% 24%) 67%, hsl(186deg 31% 17%) 75%, hsl(174deg 26% 12%) 83%, hsl(158deg 22% 8%) 92%, hsl(130deg 100% 1%) 100% ) !important; 
+
 }
 
 /* Flexible board */
 #board { 
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); 
-    position: relative;
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); 
+	position: relative;
 }
 
 /*  change: 'display' from inline-flex to block for the columns to fit stack */
 .list-wrapper { 
-    box-sizing: border-box;
-    display: block;
-    margin: 2px 5px;
-    padding-top: 10px;
-    vertical-align: top;
-    white-space: nowrap;
-    width: auto !important;
+	box-sizing: border-box;
+	display: block;
+	margin: 2px 5px;
+	padding-top: 10px;
+	vertical-align: top;
+	white-space: nowrap;
+	width: auto !important;
 }
 
 .list-wrapper.mod-add {
-    margin-top: 12px !important;
-    font-weight: bold; 
-    font-size: calc(12px + 0.1vw) !important;
-    background-color: unset !important
+	margin-top: 12px !important;
+	font-weight: bold; 
+	font-size: calc(12px + 0.1vw) !important;
+	background-color: unset !important
 }
+
 
 /* Adapt the margin-left on first column */
 .list-wrapper:first-child {
-    margin-left: 5px !important;
+   	margin-left: 5px !important;
 }
 
 /* Column header settings */
 .list-header.js-list-header { 
-    background-image: linear-gradient(to right, rgb(71, 118, 230) 0%, rgb(142, 84, 233) 51%, rgb(71, 118, 230) 100%); 
-    box-shadow: rgb(0 0 0 / 5%) 0px 2px 5px 0px, rgb(0 0 0 / 5%) 0px 0px 0px 1px;
-    margin-bottom: 12px; 
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+	/*background-image: linear-gradient(to right, rgb(71, 118, 230) 0%, rgb(142, 84, 233) 51%, rgb(71, 118, 230) 100%); */
+    /*background-color: rgb(71, 118, 230);*/
+    background: linear-gradient(15deg,#556677,#5e7683);
+	box-shadow: rgb(0 0 0 / 5%) 0px 2px 5px 0px, rgb(0 0 0 / 5%) 0px 0px 0px 1px;
+    letter-spacing: -.03em;
+    font-size: 1em;
+	margin-bottom: 12px; 
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis; 
 }
 
 .list-header-name.mod-list-name{ 
-    text-align: center; 
-    color: #f3f3f3;
-    font-size: calc(14px + 0.1vw) !important;
+	text-align: center; 
+	color: #f3f3f3;
+	font-size: calc(14px + 0.1vw) !important;
 }
 
 .list-header-name.mod-list-name.js-list-name-input.is-editing{ 
-    color: #000; 
-    background-color: #f7f7f7; 
+	color: #000; 
+	background-color: #f7f7f7; 
 }
 
 /* List settings */
 .list.js-list-content { 
-    border-radius: 2px; 
+	border-radius: 2px; 
     box-shadow: 0 6px 8px rgb(85 102 119 / 3%), 0 1px 1px rgb(85 102 119 / 40%);
 }
 
@@ -67,26 +73,26 @@
 .list-card.js-member-droppable { 
     font-family: cousine,sfmono-regular,Consolas,Menlo,liberation mono,ubuntu mono,Courier,monospace !important;
     font-size: calc(13px + 0.1vw) !important;
-    font-weight: bold; 
-    border-bottom: none; 
-    margin-bottom: 5px;
+	font-weight: bold; 
+	border-bottom: none; 
+	margin-bottom: 5px;
     max-width: unset !important;
     line-height: 2.4em;
 }
 
 .list-card.js-member-droppable.is-covered.full-cover-list-card{
-    min-height: 0;
+	min-height: 0;
 }
 
 /* Non-Color Covered cards: Center text */
 .list-card.js-member-droppable.is-covered:not([class*="color-card-cover"])>.list-card-details.js-card-details>.list-card-title.js-card-name { 
-    text-align: center;
+	text-align: center;
 }
 
 /* Covered cards: picture fit */
 .list-card-cover.js-card-cover.is-covered { 
-    width: 100%; 
-    background-size: contain !important; 
+	width: 100%; 
+	background-size: contain !important; 
     border: none;
 }
 
@@ -96,15 +102,15 @@
 
 /* Color covered cards settings */
 .list-card-cover.js-card-cover.is-covered.color-card-cover { 
-    height: 7px !important; 
-    border: none;
+	height: 7px !important; 
+	border: none;
     padding: 4px 0;
 }
 
 /* Hide some badges (description + attachment) */
 .badge[title="This card has a description."], .badge[title="Attachments"]{ 
-    display: none; 
-    visibility: hidden; 
+	display: none; 
+	visibility: hidden; 
 }
 
 /* Cover colors settings */
